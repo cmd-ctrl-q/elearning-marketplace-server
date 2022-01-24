@@ -1,3 +1,10 @@
 export const Register = (req, res) => {
-  res.send('register user');
+  const body = req.body;
+  console.log({
+    name: body.name,
+    email: body.email,
+    password: body.password,
+  });
+
+  res.json('register user');
 };
